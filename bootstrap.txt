@@ -1,0 +1,108 @@
+//http://www.runoob.com/bootstrap/bootstrap-grid-system.html
+
+1,环境安装
+	1,1 http://getbootstrap.com/ 上下载 Bootstrap 的最新版本
+	1,2 HTML 模板
+	<!DOCTYPE html>
+	<html>
+	   <head>
+		  <title>Bootstrap 模板</title>
+		  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		  <!-- 引入 Bootstrap -->
+		  <link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+
+		  <!-- HTML5 Shim 和 Respond.js 用于让 IE8 支持 HTML5元素和媒体查询 -->
+		  <!-- 注意： 如果通过 file://  引入 Respond.js 文件，则该文件无法起效果 -->
+		  <!--[if lt IE 9]>
+			 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			 <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+		  <![endif]-->
+	   </head>
+	   <body>
+		  <h1>Hello, world!</h1>
+
+		  <!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+		  <script src="https://code.jquery.com/jquery.js"></script>
+		  <!-- 包括所有已编译的插件 -->
+		  <script src="js/bootstrap.min.js"></script>
+	   </body>
+	</html>
+
+
+2,移动设备优先
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, 
+										 initial-scale=1.0, 
+										 maximum-scale=1.0, 
+										 user-scalable=no">
+
+3,CSS
+网格系统（Grid System）
+	.container					容器
+	.row						行
+	.col-xs-*					*:1~12,列，超小设备手机（<768px）
+	.col-sm-*					*:1~12,列，小型设备平板电脑（≥768px）
+	.col-md-*					*:1~12,列，中型设备台式电脑（≥992px）
+	.col-lg-*					*:1~12,列，大型设备台式电脑（≥1200px）
+	.clearfix 
+	.col-md-offset-*			*:1~11,偏移列
+	.col-md-push-*				排序
+	.col-md-pull-* 				排序
+排版
+	<small>						内联子标题
+	.lead						得到更大更粗、行高更高的文本
+	<small>本行内容是在标签内</small><br>
+	<strong>本行内容是在标签内</strong><br>
+	<em>本行内容是在标签内，并呈现为斜体</em><br>
+	<p class="text-left">向左对齐文本</p>
+	<p class="text-center">居中对齐文本</p>
+	<p class="text-right">向右对齐文本</p>
+	<p class="text-muted">本行内容是减弱的</p>
+	<p class="text-primary">本行内容带有一个 primary class</p>
+	<p class="text-success">本行内容带有一个 success class</p>
+	<p class="text-info">本行内容带有一个 info class</p>
+	<p class="text-warning">本行内容带有一个 warning class</p>
+	<p class="text-danger">本行内容带有一个 danger class</p>
+	<abbr>						缩写
+	<address>					显示联系信息
+	<blockquote>				引用
+	.list-unstyled				移除默认的列表样式
+	.list-inline				将所有列表项放置同一行
+	.dl-horizontal				该类设置了浮动和偏移，应用于 <dl> 元素和 <dt> 元素中，具体实现可以查看实例
+	.pre-scrollable				使 <pre> 元素可滚动 scrollable
+	.lead						使段落突出显示	
+	.small						设定小文本 (设置为父文本的 85% 大小)	
+	.text-left					设定文本左对齐	
+	.text-center				设定文本居中对齐	
+	.text-right					设定文本右对齐	
+	.text-justify				设定文本对齐,段落中超出屏幕部分文字自动换行	
+	.text-nowrap				段落中超出屏幕部分不换行	
+	.text-lowercase				设定文本小写	
+	.text-uppercase				设定文本大写	
+	.text-capitalize			设定单词首字母大写	
+	.initialism					显示在 <abbr> 元素中的文本以小号字体展示	
+	.blockquote-reverse			设定引用右对齐
+代码
+	<code> 						如果您想要内联显示代码，那么您应该使用 <code> 标签。
+	<pre> 						如果代码需要被显示为一个独立的块元素或者代码有多行，那么您应该使用 <pre> 标签。
+表格
+	<table>						为表格添加基础样式。
+	<thead>						表格标题行的容器元素（<tr>），用来标识表格列。
+	<tbody>						表格主体中的表格行的容器元素（<tr>）。
+	<tr>						一组出现在单行上的表格单元格的容器元素（<td> 或 <th>）。
+	<td>						默认的表格单元格。
+	<th>						特殊的表格单元格，用来标识列或行（取决于范围和位置）。必须在 <thead> 内使用。
+	<caption>					关于表格存储内容的描述或总结。
+	<tr>, <th> 和 <td> 类
+	.active						将悬停的颜色应用在行或者单元格上	尝试一下
+	.success					表示成功的操作	尝试一下
+	.info						表示信息变化的操作	尝试一下
+	.warning					表示一个警告的操作	尝试一下
+	.danger						表示一个危险的操作
+表单
+	垂直或基本表单
+		向父 <form> 元素添加 role="form"。
+		把标签和控件放在一个带有 class .form-group 的 <div> 中。这是获取最佳间距所必需的。
+		向所有的文本元素 <input>、<textarea> 和 <select> 添加 class .form-control。
+	内联表单
+		如果需要创建一个表单，它的所有元素是内联的，向左对齐的，标签是并排的，请向 <form> 标签添加 class .form-inline。

@@ -1,0 +1,43 @@
+About::jLim v0.4.0 - MIT license - https://github.com/freelancephp/jLim
+
+
+domReady
+	domReady( fn ) (equal to domReady.on)
+	domReady.on( fn )
+		Example:
+		domReady(function () {
+			alert('DOM is ready!');
+		});
+		// is equal to
+		domReady.on(function () {
+			alert('DOM is ready!');
+		});
+	domReady.params( params )
+		var param1 = 'hello';
+		var param2 = 1234;
+		domReady.params([param1, param2]);
+		// params will be passed on to the handler
+		domReady.on(function (arg1, arg2) {
+			// arg1 = 'hello' and arg2 = 1234
+		});
+	domReady.error( fn )
+		domReady.error(function (err) {
+			alert(err);
+		});
+simpleAjax
+	simpleAjax( options )
+	simpleAjax.get( url, [data], [success] )
+	simpleAjax.post( url, [data], [success] )
+	simpleAjax.load( el, url, [data], [complete] )
+
+
+
+
+
+
+
+
+
+
+
+
