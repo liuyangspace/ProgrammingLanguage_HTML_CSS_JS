@@ -1,0 +1,21 @@
+
+
+HTML (HyperText Markup Language,超文本标记语言)
+W3C : https://www.w3.org/html/
+H5 : https://www.w3.org/TR/html52/
+course : https://courses.edx.org/courses/course-v1:W3Cx+HTML5.0x+3T2017/course/
+IETF  互联网工程任务组
+W3C 万维网联盟
+WHATWG 网页超文本应用技术工作小组
+
+1.什么是HTML
+     1.html是用来制作网页标记语言
+     2.html是 Hypertext Markup Language 的缩写  即 超文本标记语言
+     3.html语言是一种标记语言，不需要编译，直接有浏览器执行
+     4.html文件是一个文本文件，包含了一些html元素，标签等
+     5.html文件必须使用.html或.htm 为文件名后缀  推荐使用.html
+     6.html是大小写不敏感的，HTML 和html是一样   推荐使用小写
+     7.html是w3c维护
+     8.html是通向web技术世界的钥匙
+2,标记语言
+    gml(1969)->sgml->(1985)->html(1993)->xml(1998)

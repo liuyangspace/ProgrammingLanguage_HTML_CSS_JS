@@ -1,0 +1,26 @@
+
+HTML (HyperText Markup Language,超文本标记语言)
+W3C : https://www.w3.org/html/
+H5 : https://www.w3.org/TR/html52/
+course : https://courses.edx.org/courses/course-v1:W3Cx+HTML5.0x+3T2017/course/
+
+1,statement
+    语法：<elementName attributeName="attributeValue">[text/childElement]</elementName> or <elementName attributeName="attributeValue" />
+    标签：<>
+    注释：<!-- 注释内容 -->
+    实体： &(引用/数值码);
+2,structure
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <title>Story</title>
+    </head>
+    <body>
+        <h1>My Story</h1>
+    </body>
+    </html>
+
+3,element & attribute(https://www.w3.org/TR/html52/dom.html#the-document-object)
+    3.1,Metadata content
+
+    3.2,Flow content
