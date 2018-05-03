@@ -1,0 +1,145 @@
+
+
+
+1.节点介绍
+    1.1 什么是节点
+        一切皆节点
+        document	文档
+        element	元素
+        attr	属性
+        text	文本
+        comment	注释
+
+    1.2 节点树
+        父节点
+        子节点
+        同辈（兄弟）节点	有共同的父节点
+        先辈节点
+        后代节点
+        <html>
+            <body>
+                <ul>
+                    <li id=''>123</li>
+                    <li>123</li>
+                    <!--comment-->
+                </ul>
+            </body>
+        </html>
+
+    1.3 节点的访问  通过一个元素遍历全局
+        获得节点
+            document.getElementById()
+        获取子节点
+            element.childNodes		包括换行等文本节点、注释节点等
+        获取子元素节点
+            element.children
+        获取第一个子节点
+            element.firstChild
+        获取最后一个子节点
+            element.lastChild
+        获取父节点
+            element.parentNode
+        获取父元素节点
+            elemetn.parentElement	大多数情况两者一样
+        获取前一个节点
+            element.previousSibling
+        获取后一个节点
+            element.nextSibling
+
+    1.4 节点属性
+        ① nodeName
+            document   #document
+            element	   标签名
+            attr	   属性名
+            text		#text
+            comment		#comnent
+        ② nodeValue
+            document	null
+            element		null
+            attr		attrvalue
+            text		内容
+            comment		注释内容
+        ③ nodeType
+            document	9
+            element		1
+            attr		2
+            text		3
+            comment		8
+2.节点操作
+    2.1 获取节点
+        获取元素节点
+            getElementById()
+            getElementsByTagName("tagname")
+            getElementsByClassName("classname")
+            getElementsByName("name”)
+            父节点:
+                node.parentNode
+                node.parentElement
+            子节点:
+                node.childNodes
+                node.children
+                node.firstChild
+                node.lastChild
+            同辈节点:
+                node.previousSibling    // 前一个兄弟元素
+                node.nextSibling         // 下一个兄弟元素
+        获取节点名称
+            node.nodeName
+        获取属性节点
+            node.attributes; //获取对象的所有的属性的集合
+            node.getAttribute(attrname)		获取指定属性的值   可识别自定义属性
+            node.getAttributeNode(attrname)	获取指定属性的节点
+                .nodeValue
+            node.attrname					获取指定属性的值  路径绝对路径 内置可识别属性
+        获取文本节点
+            innerHTML	保持结构
+            innerText	字符串
+    2.2 改变节点（改变节点的值）
+            改变元素节点
+                无意义
+            改变属性节点
+                element.attrname = value
+                element.setAttribute(attrname,value)
+            改变文本节点
+    2.3 删除节点
+            删除元素节点
+                element.removeChild(node);
+            删除属性节点
+                element.removeAttribute(attrname);
+    2.4 替换节点
+            替换元素节点
+            element.replaceChild(new_node,old_node);
+    2.5 创建节点
+            创建元素节点
+            document.createElement()
+            document.createAttribute(),element.setAttributeNode(obj)
+            document.createTextNode(),element.appendChild(obj)
+    2.6 插入节点
+            appendChild(new_node)
+            insertBefore(new_node,old_node)
+    2.7 克隆节点
+            element.cloneNode()	true	克隆节点及后代节点   false 仅仅克隆制定节点本身
+
+3.XML 对象
+    node
+    nodelist
+    document
+    element
+    attr
+    text
+    comment
+
+4.HTMLElement对象
+    value
+    innerHTML
+    innerText
+    className
+    sytle
+    offsetWidth	  width + padding + border
+    offsetHeight	...
+    clientWidth		width + padding
+    clientHeight
+    scrollWidth		扩充width + padding
+    scrollHeight
+    offsetLeft
+    offsetTop

@@ -1,0 +1,45 @@
+
+javascript
+
+1. javascript 简介
+	1.1 什么是javascript
+		1.1.1 概念： javascript是 基于对象 和 事件驱动 并具有相对安全性的 客户端 脚本 语言
+		1.1.2 发展简史：
+			① Nombas公司1992年开发 嵌入式脚本语言 C-- 后改名 ScriptEase
+			② Netscape公司 1995年发布LiveScript 后改名javascript1.0
+			③ 三足鼎立  NetScape推出javascript1.1后，Microsoft推出Jscript, 加上 ScriptEase
+			④ 标准化 1997javascript1.1 作为草案 提交给 ECMA（欧洲计算机制造商协会） 。由来自 Netscape、Sun、
+				微软、Borland 和其他一些对脚本编程感兴趣的公司的程序员组成的 TC39 锤炼出了 ECMA-262，该标准
+				定义了名为 ECMAScript 的全新脚本语言。
+		1.1.3 组成： 核心（ECMAScript） 文档对象模型（DOM）  浏览器对象模型（BOM）
+		1.1.4 客户端浏览器上执行的脚本 JavaScript   VBScript    applet（需要安装JDK）
+		1.1.5 ECMAScript核心: JavaScript   ActionScript  ScriptEase
+		1.1.6 扩展：
+				Node.js
+				phonegab	app
+		1.1.7 浏览器
+			IE	IE6、IE7、IE8、IE9+
+			非IE	chrome	firefox  苹果	Opera
+			壳浏览器	360	猎豹 qq 百度 淘宝 搜狗
+	1.2 javascript的特点
+		①.javascript是一种脚本编程语言，也是一种解释性语言
+		②.javascript的语法结构与C++、java十分类似
+		③.javascript是一种基于对象的语言
+		④.javascript具有跨平台性。
+		⑤.安全性与简单性
+		⑥ 基于对象（真正的对象 封装 继承 多态）
+	1.3 javascript 和 java的区别
+		雷锋和雷峰塔
+		周杰和周杰伦的区别
+	1.4 javascript 程序运行开发环境
+		1.NetScape.3.0 以上版本和IE3.0 以上版本
+		2.用于编辑HTML的字符编辑器
+	1.5 javascript 优点与局限
+		1.5.1 优点
+			①使用javascript在客户端进行验证，节省服务器资源
+			②方便的操控页面中的各个对象，使网页更加友好
+			③使多种任务仅在客户端就可以完成而不需要网络和服务器的参与，从而支持分布式的运算和处理
+		1.5.2 局限
+			①兼容性
+			②javascript不能打开，读写和保存计算机上的文件
+

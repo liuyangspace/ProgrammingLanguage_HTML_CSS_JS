@@ -1,0 +1,84 @@
+
+
+
+2. HTML DOM 对象参考
+	2.1 document对象
+		document 描述整个文档
+		① 属性
+			URL
+			domain
+			referrer
+			lastModified
+			title					可修改
+			all						所有元素的集合  nodeName标签名  true IE
+			anchors					锚点集合
+			images					图片集合
+			cookie					设置cookie
+
+		② 方法
+			write()					直接在文档中输出
+			getElementById()		获取文档中的元素id
+			getElementsByTagName()	tagname
+
+	2.2 form对象
+		① 多种方式获取 form中的某个对象
+			form[0]
+			form['user']
+			form.user
+			form.elements[0]
+			form.elemtnts['user']
+			form.item(1)
+		② 方法
+			submit()		提交
+			reset()			重置
+	2.3 image对象
+	2.5 anchor 对象
+	2.6 area 对象
+	2.7 base 对象
+	2.8 body
+	2.9 button
+	2.10 canvas
+		getContext('2d');
+		beginPath();
+		closePath();
+		fill();
+	2.11 Event
+		① 属性
+			clientX
+			clientY
+			keyCode
+			target		触发事件的元素本身
+			事件委派	对后添加的元素事件绑定
+			cancelBubble	true时 阻止冒泡事件
+		② 方法
+			stopPropagation()		阻止事件冒泡
+			preventDefault()		取消元素默认方法
+
+	2.12 input
+		focus()
+		blur()
+		select()
+
+	2.13 select
+		属性：
+		selectedIndex	被选中的index
+		方法：
+		add()
+		remove()
+	2.14 option
+		selected		被选中的
+
+	2.15 table
+		rows 		所有行
+		cell		所有列
+		insertRow()
+		deleteRow()
+
+	2.16 tableRow	TR
+		rowIndex	指定行在整个表格中的行数下标
+		insertCell()	给tr添加td
+		deleteCell()	删除一个tr
+
+		parentNode
+
+        Css只写，不能读

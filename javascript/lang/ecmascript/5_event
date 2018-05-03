@@ -1,0 +1,78 @@
+
+
+事件中的三要素：事件源、事件、事件处理
+
+1. 事件的绑定
+    1.1 单个元素的绑定
+        ①直接在元素内部写入事件
+            <tags onclick='js'></tags>
+        ②先获取元素，再绑定事件
+            element.onclick() = function(){ code...}
+
+        和 a 标签相关的两个问题
+            href="javascript:alert(1)"
+            href="javascript:void(0)" 保持样式  无跳转 无意义
+    1.2 同时绑定给多个元素
+    for()
+
+2. this 的使用
+    ①在多个元素绑定事件中代表触发改事件 的元素本身
+    ②如果事件绑定在标签中，this可表示标签自己
+
+4. 常用事件
+    4.1 鼠标事件
+        onclick()		点击事件	（单击）
+        ondblclick()	双击
+        onmousedown()
+        onmouseup()
+        oncontextmenu()	右键
+        onmousemove()
+        onmouseover()
+        onmouseout()
+    4.2 键盘事件
+        onkeypress 	识别能有输出实体的字符
+        onkeydown 	键盘按下识别所有
+        onkeyup		键盘抬起
+    4.3 文档事件
+        onload		文档载入后触发
+        onunload	文档关闭后触发 没用
+        onbeforeunload	同上有用	return 可提示信息
+    4.4 表单事件
+        onsubmit	当表单提交时 form中绑定 return false取消提交
+        onreset		reset触发
+        onblur		失去焦点
+        onfocus		获取焦点
+        onchange	选择option 并失去焦点
+        oninput		text 内容一变就触发 非IE
+        onpropertychange	同上 IE
+        onselect	选中文本时触发
+    4.5 图片事件
+        onload		图片载入成功后触发
+        onabort		图片加载过程中止触发
+        onerror		图片加载失败
+    4.6 其他事件
+        onresize	绑定的元素尺度改变时触发
+        onscroll	元素内容滚动时触发
+
+5. Event 对象
+    5.1 对象获取
+        触发时自动创建
+        function(en){
+            var e = en || window.event;
+        }
+    5.2 属性
+        e.clientX	获取事件(鼠标)横坐标
+        e.clientY	获取事件(鼠标)纵坐标
+        keyCode
+
+        返回元素定点坐标,HTML DOM:
+            offsetLeft
+            offsetTop
+            offsetWidth
+            offsetHeight
+            scrollLeft
+            scrollTop
+            setTimoout()
+            clearTimeout()
+            setInterval()
+            clearInterval()

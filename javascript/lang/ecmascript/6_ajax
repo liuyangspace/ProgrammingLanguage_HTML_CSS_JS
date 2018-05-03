@@ -1,0 +1,63 @@
+
+
+
+1. ajax
+	asyn javascript and xml   js 和 xml 的异步执行
+	请求（request）
+	响应（response）
+
+2. XMLHttpRequest对象 XHR
+	2.1 概念
+		XMLHttpRequest 对象是开发者的梦想
+		IE7+ 非IE
+		new XMLHttpRequest()
+		IE5 IE6
+		new ActiveXObject('Microsoft.XMLHTTP')
+	2.2 常用属性
+		① readyState 请求响应过程状态
+			0 初始化状态
+			1 open方法调用，但还未发送请求
+			2 send方法调用，已经接收请求但没响应
+			3 响应未全部完成
+			4 完全接收响应
+		② status 服务器状态
+			200 OK 请求成功
+			301 Moved Permanently 所请求的页面已经转移至新的url。
+			403 Forbidden 对被请求页面的访问被禁止。
+			404 Not Found 服务器无法找到被请求的页面。
+			500 未知情况
+			503 服务器宕机
+		③ responseText 获取服务器端的响应结果
+	2.3 常用方法
+		①open(method,url,async, username, password)
+			第一参数：请求方式  get默认  post
+			第二参数：url			只要是 浏览器地址能解析的文件都可以请求
+			第三参数：boolean是否异步处理    true/false   异步（默认）/同步
+	    ②setRequestHeader(headerName, headerValue)
+		③send(body)
+			get无参数
+			post传参
+				key1=val1&key2=val2
+	2.4 onreadystatechange
+			readyState一变就触发   0->1
+3. ajax+php 请求流程
+	①创建xhr对象
+	②请求初始化
+	③发送请求
+	④接收响应
+4. 处理json数据
+		javascript: eval()  将字符串当作代码执行
+		PHP：	str(json) = json_encode(array)		数组转json字符串
+				array = json_decode($json)			将json字符串转成数组
+
+5. 同步和异步
+
+6. post 和 get
+	使用post：
+		① 发送参数 通过send()
+		② 设置请求头   xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+
+7. ajax 跨域 jsonp
+	利用script标签的src跨域功能 对指定url请求
+	返回调用js中方法的代码并携带数据
+	完成跨域请求数据的效果

@@ -1,0 +1,128 @@
+
+
+
+1.1 创建对象
+    ①直接构造  new Object()
+        var myObject = new Object();
+        myObject.name = “lijie”;
+        myObject.say = function(){}
+    ②快速构造
+        var objectName = { propertyName : value ，....}
+    ③自定义
+        function ObjectName(args...){ code };
+        var object = new ObjectName("xxx");
+    ④自定义并实例化
+        var object = new function(){ code}
+
+2, 测试类型 constructor
+    语法: object.constructor
+    返回数据的构造方法
+
+3, 原型 prototype
+    语法: object.prototype.name=value
+    给原型  constructor返回的方法.prototype.fun = function(){code}
+
+4, 删除对象中成员 delete
+    delete  obj.成员属性
+    delete  obj.成员方法
+
+5, 内置对象
+    5.1. Boolean
+        5.1.1 获取Boolean对象
+            ①直接赋值 var b = true
+            ②转换函数  var b = Boolean('')
+            ③构造方法 var b = new Boolean()
+        5.1.2 转换函数与构造函数的区别
+            转换方法：将参数值转换成true或false,返回值为boolean
+            构造方法: 将参数值转换成true或false,返回值为对象
+
+    5.2. Number
+        5.2.1 获取Number类型的
+            ①直接赋值
+            ②转换函数
+            ③构造方法
+        5.2.2 属性
+            Number.MAX_VALUE
+            Number.MIN_VALUE
+        5.2.3 方法
+            toString	进制转换
+            toFixed		保留浮点数位数
+    5.3. String
+        5.2.1 获取字符串对象
+            ①直接赋值
+            ②转换函数
+            ③构造方法
+        5.2.2 属性
+            length
+        5.2.3 方法
+            big()
+            anchor()
+            blink()
+            charAt()	            // 返回指定位置的字符
+            indexOf()	            // 返回指定字符首次出现的位置
+            lastIndexOf()	        // 返回指定字符最后出现的位置
+            substr(start,length)	// 截取指定起始点指定长度的字符串
+            substring(start,end)	// 截取start开始到end前结束下标的字符串
+            slice(start,end)		// 同上
+
+            toUpperCase()	        // 转大写
+            toLowercase()	        // 转小写
+
+            replace(regExp,str)	    // 替换正则匹配的值
+            search(regExp)	        // 搜索正则匹配的值	有返回下标		没有返回-1
+            match(regExp)	        // 匹配正则的值		如果有返回字符	没有返回null
+
+    5.4. RegExp
+        5.4.1 获取正则对象
+            new RegExp()
+        5.4.2 方法
+            exec(str) 	正则匹配指定字符串 有返回字符串 没有返回null
+            test(str) 	正则匹配指定字符串 有返回true 没有返回false
+
+    5.5. Date
+        5.5.1 获取date对象
+            new Date();
+            new Date(str) //str表达日期的字符串，常用格式为“月 日,年 小时:分钟:秒”
+        5.5.2 方法
+            get
+                getYear()		//返回年份，不建议使用
+                getFullYear()   //返回年份，4位数，建议使用
+                getMonth()		//返回月份，其值范围为0~11
+                getDate()		//返回日期对象中的一个月中的第几天
+                getDay()		//返回星期中的某一天，0~6
+                getHours()		//返回日期对象中的小时部分
+                getMinutes()    //返回日期对象中的分钟部分
+                getSeconds()    //返回日期对象中的秒钟部分
+                getMilliseconds()	//返回日期对象中的毫秒部分
+                getTime()		//返回日期对象中的时间戳的毫秒数
+                getTimezoneOffset()	//返回日期对象中的时区的时差数，单位是秒
+            set
+            setUTC
+            to
+
+    5.6. Math
+        数学对象的属性：
+            Math.E:			//自然对数的底数(e)
+            Math.LN10:		//loge10
+            Math.LN2:		//loge2
+            Math.LOG10E:    //log10e
+            Math.LOG2E:		//log2e
+            Math.PI:		//3.1415926
+            Math.SQRT1_2:	//2的平方根的倒数
+            Math.SQRT2:		//2的平方根
+        数学对象的方法：
+            Math.abs():	    //绝对值
+            Math.ceil():    //进一取整
+            Math.floor():   //退一取整
+            Math.max(num1,num2….):		//取最大值
+            Math.min():	    //取最小值
+            Math.pow(x,y):  //返回x的y次幂
+            Math.random():  //0.0~1.0之间的随机数
+            Math.round():   //四舍五入
+            Math.sqrt():    //平方根
+
+*,JavaScript对象模型由以下4个部分组成：
+    1.JavaScript语言核心部分：该部分主要包括JavaScript的数据类型、运算符和表达式。
+    2.与数据类型相关的核心对象：布尔对象、日期对象、数学对象、数字对象和字符串对象等。
+    3.与浏览器相关的对象：该部分主要包括Window对象、Navigator对象、Location对象等。
+    4.与文档相关的对象：Document对象、Form对象和Image对象等。

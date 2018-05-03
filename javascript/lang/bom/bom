@@ -1,0 +1,80 @@
+
+BOM (Brower Object Model,浏览器对象模型)
+
+BOM树
+					 window
+						|
+document   history  location   screen   navigator
+|
+head     body
+
+1、window对象
+    特点
+    ① 自定义的方法和属性都属于window对象 但是可以省略 demo()  window.demo()
+
+    属性
+        document
+        location
+        history
+        screen
+        navigator
+        name			窗口名字
+        screenLeft		窗口相对屏幕位置
+        screenTop
+        screenX
+        screenY
+        frames			该窗口所有子框架集合
+        length			框架数
+        clipboardData
+            clipboardData.setData('text',VALUE);
+
+    方法
+        open
+            url  name  size
+        close
+        print
+        alert
+        confirm
+        prompt
+
+        moveBy	将window窗口移动多少	IE
+        moveTo	将窗口移动到多少		IE
+        resizeBy	将窗口尺寸增加多少	IE
+        resizeTo	将窗口尺寸调整到多少IE
+        scrollBy	将滚动条移动多少  - 上  +  下		兼容
+        scrollTo	将滚动条移动至多少					兼容
+            document.body.scrollTop || document.documentElement.scrollTop
+
+2、history
+	属性
+		length   页面历史URL个数
+	方法
+		back	上一步
+		forward	下一步
+		go(n)	上下n步
+
+3、location
+	属性
+		href
+		hostname
+		search
+		hash
+		protocol
+		pathname
+
+	方法
+		reload()		刷新
+		assign()		跳转
+		replace()		同上
+
+4、screen
+	属性
+	width	屏幕宽度
+	height	屏幕高度
+
+5、navigator
+	userAgent
+	MSIE TRident
+	vr:11
+	MSIE n.0
+

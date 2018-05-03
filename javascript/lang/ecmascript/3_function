@@ -1,0 +1,51 @@
+
+
+
+1.1 函数的声明
+    ①function关键字
+        function funname([参数列表]){}
+        funname();
+    ②运算符赋值方法
+        var fun1 = function([参数列表]){}
+        fun1();
+    ③构造方法
+        var fun1 = new Function([参数列表]'函数体')
+    注意：
+        函数可以重复定义
+
+1.2 调用函数
+        函数名加() 调用
+        不加() 引用传值
+
+1.3 javascript中的参数
+    1.3.1 形参 实参
+        实参>形参 直接抛弃后面的参数
+        实参<形参 undefined
+    1.3.2 可变参数数量的函数
+        arguments.length 数组形式 数组对象  索引数组
+    1.3.3 参数 默认值
+        如果形参传值不存在，判断undefined 并赋初始值
+
+1.4 javascript中的变量作用域  全局和局部变量
+    在函数外部 用 var 定义的变量为全局变量
+    在函数内部 用 var 定义的变量为局部变量
+    在函数内部 不用var 定义的变量为全局变量（不推荐）
+
+1.5 闭包
+    **函数全局传参（使用非形参的全局变量）为传地址（无常量）不是传值
+    常用于 用一组元素获取另一组元素的绑定事件中
+    格式：
+    for(){
+        (function(i){
+
+        })(i)
+    }
+
+1.6 javascript系统函数
+    isNaN()
+    parseInt()
+    parseFloat()
+    Number()
+    escape() 把特殊字符转换成ascii编码
+    unescape() escape的反向操作
+    eval() 把字符串当做代码在执行
