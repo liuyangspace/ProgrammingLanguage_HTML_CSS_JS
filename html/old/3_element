@@ -3,6 +3,8 @@
     <html></html>
     <head></head>
     <title></title>         文档标题
+    <base/>                 URL的相对路径，自动补全至相对url
+                                href        : 相对url的 前置部分
     <meta/>                 HTML 元素的元信息 (meta-information)，比如描述、针对搜索引擎的关键词以及刷新频率。属性：
                                 charset     : utf-8
                                 http-equiv  : content-type expires refresh set-cookie
